@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Contacto</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    min-height:100vh;
+    padding-top:90px;
+}
+
+/* NAV */
+nav{
+    background-color:#8b1e3f;
+    padding:15px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+nav ul li{
+    margin:5px 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ffe066;
+}
+
+/* TITULO */
+h1{
+    text-align:center;
+    color:#8b1e3f;
+    margin-bottom:30px;
+    font-size:42px;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+}
+
+/* CARD DIFERENTE */
+.card{
+    background:#ffd6e0;
+    padding:40px;
+    border-radius:50px 10px 50px 10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    border:4px dashed #8b1e3f;
+}
+
+/* FORM */
+ul{
+    list-style:none;
+}
+
+li{
+    margin:22px 0;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#8b1e3f;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* INPUTS */
+input,
+textarea{
+    width:100%;
+    padding:12px 5px;
+    border:none;
+    border-bottom:2px solid #8b1e3f;
+    background:transparent;
+    font-size:16px;
+    outline:none;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+/* BOTONES */
+button,
+.boton{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background-color:#8b1e3f;
+    color:white;
+    border:none;
+    border-radius:25px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+button:hover,
+.boton:hover{
+    background-color:#c9184a;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="Index.html">Inicio</a></li>
+<li><a href="Presentacion.html">Presentación</a></li>
+<li><a href="Academico.html">Académicos</a></li>
+<li><a href="Hobbies.html">Hobbies</a></li>
+<li><a href="Referencias.html">Habilidades</a></li>
+<li><a href="registro.html">Registro</a></li>
+</ul>
+</nav>
+
+<h1>Registro de Contacto</h1>
+
+<div class="contenedor">
+
+<div class="card">
+
+<form action="https://formspree.io/f/xjglakvy" method="POST">
+
+<input type="hidden" name="_subject" value="Nuevo mensaje desde tu CV">
+<input type="hidden" name="_captcha" value="false">
+
+<ul>
+
+<li>
+<label>Nombre:</label>
+<input type="text" name="name" required>
+</li>
+
+<li>
+<label>Correo:</label>
+<input type="email" name="email" required>
+</li>
+
+<li>
+<label>Mensaje:</label>
+<textarea name="message" required></textarea>
+</li>
+
+<li>
+<button type="submit">Enviar</button>
+</li>
+
+</ul>
+
+</form>
+
+<a href="index.html" class="boton">⬅ Volver al Inicio</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
